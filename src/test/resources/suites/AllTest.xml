@@ -1,8 +1,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name = "MyStore v.3" verbose="1">
-    <test name = "">
+    <test name = "Dois testes de Fluxo de compra.">
         <classes>
             <class name="testcases.BuySuccessfullyTestCase"/>
+            <class name="testcases.NewUserBuySuccessfullyTestCase"></class>
         </classes>
     </test>
 </suite>

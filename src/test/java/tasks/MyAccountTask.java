@@ -18,7 +18,7 @@ public class MyAccountTask {
     }
 
     private void search() {
-        myAccountAppObject.getSearchProductTextField().sendKeys("Printed Chiffon Dress");
+        myAccountAppObject.getSearchProductTextField().sendKeys("dress");
         myAccountAppObject.getSearchProductTextField().sendKeys(Keys.ENTER);
     }
 }
