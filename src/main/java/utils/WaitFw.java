@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WaitFw {
     private WebDriver driver;
-    private static final int WAIT_SEC = 15;
+    private static final int WAIT_SEC = 90;
 
     public static void elementToBeClickable(WebDriver driver, WebElement element) {
         WebDriverWait wait = new WebDriverWait(driver, WAIT_SEC);

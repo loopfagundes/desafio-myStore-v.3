@@ -48,8 +48,8 @@ public class ProductToCartTask {
     }
 
     private void orderConfirmation() {
-        System.out.println("name page: " + productToCartAppObject.getValidatePageOrderConfirmationLabel().getText());
-        System.out.println("completed: " + productToCartAppObject.getValidateMyStoreCompleteLabel().getText());
+        Assert.assertEquals("ORDER CONFIRMATION", productToCartAppObject.getValidatePageOrderConfirmationLabel().getText());
+        Assert.assertEquals("Your order on My Store is complete.", productToCartAppObject.getValidateMyStoreCompleteLabel().getText());
         productToCartAppObject.getLogoutButton().click();
     }
 }

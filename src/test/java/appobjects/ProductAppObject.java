@@ -12,8 +12,12 @@ public class ProductAppObject {
         this.driver = driver;
     }
 
+    public WebElement getListProductsButton() {
+        return driver.findElement(By.className("icon-th-list"));
+    }
+
     public WebElement getChooseProductPrintedSummerDressButton() {
-        return driver.findElement(By.cssSelector("#center_column > ul > li:nth-child(1) > div > div.left-block > div"));
+        return driver.findElement(By.cssSelector("#center_column > ul > li:nth-child(1) > div > div > div.center-block.col-xs-4.col-xs-7.col-md-4 > h5 > a"));
     }
 
     public WebElement getValidateNameProductText() {

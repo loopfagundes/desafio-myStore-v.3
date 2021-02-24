@@ -27,6 +27,7 @@ public class CreateAnAccountTask {
     }
 
     private void createAnAccount() {
+        createAnAccountAppObject.getFirstNameTextField().sendKeys(faker.name().firstName());
         createAnAccountAppObject.getGenderCheckBox().click();
     }
 }

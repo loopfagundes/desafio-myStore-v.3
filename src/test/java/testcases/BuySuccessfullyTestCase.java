@@ -15,7 +15,7 @@ public class BuySuccessfullyTestCase extends BaseTest {
     private ProductToCartTask productToCartTask = new ProductToCartTask(driver);
 
     @Test(dataProvider = "loginCsv", dataProviderClass = DataClass.class)
-    public void test(String email, String password) {
+    public void LoginAndBuySuccessfully(String email, String password) {
         indexTask.accessLogin();
         authenticationTask.login(email, password);
         myAccountTask.searchProduct();

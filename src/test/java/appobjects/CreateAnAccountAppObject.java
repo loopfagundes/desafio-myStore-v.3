@@ -3,6 +3,7 @@ package appobjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import utils.WaitFw;
 
 public class CreateAnAccountAppObject {
     private WebDriver driver;
@@ -23,7 +24,13 @@ public class CreateAnAccountAppObject {
         return driver.findElement(By.cssSelector("#SubmitCreate > span"));
     }
 
+    public WebElement getFirstNameTextField() {
+        WaitFw.visibilityOf(driver, driver.findElement(By.id("customer_firstname")));
+        return driver.findElement(By.id("customer_firstname"));
+    }
+
     public WebElement getGenderCheckBox() {
-        return driver.findElement(By.id("uniform-id_gender2"));
+        WaitFw.elementToBeClickable(driver, driver.findElement(By.id("id_gender1")));
+        return driver.findElement(By.id("id_gender1"));
     }
 }

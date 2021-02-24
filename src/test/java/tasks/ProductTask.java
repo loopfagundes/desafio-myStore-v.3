@@ -19,6 +19,7 @@ public class ProductTask {
     }
 
     private void productPrintedSummerDress() {
+        productAppObject.getListProductsButton().click();
         productAppObject.getChooseProductPrintedSummerDressButton().click();
         Assert.assertEquals("Printed Summer Dress", productAppObject.getValidateNameProductText().getText());
         productAppObject.getAddToCartButton().click();

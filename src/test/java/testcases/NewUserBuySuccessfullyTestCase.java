@@ -12,7 +12,7 @@ public class NewUserBuySuccessfullyTestCase extends BaseTest {
     private CreateAnAccountTask createAnAccountTask = new CreateAnAccountTask(driver);
 
     @Test
-    public void test() {
+    public void CreateAccountAndBuySuccessfully() {
         indexTask.accessLogin();
         createAnAccountTask.pages();
     }
