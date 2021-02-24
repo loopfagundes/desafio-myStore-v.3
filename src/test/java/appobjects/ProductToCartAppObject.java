@@ -74,4 +74,8 @@ public class ProductToCartAppObject {
     public WebElement getLogoutButton() {
         return driver.findElement(By.cssSelector("div[class='nav'] a[class='logout']"));
     }
+
+    public WebElement getValidateAuthLabel() {
+        return driver.findElement(By.cssSelector("#center_column > h1"));
+    }
 }

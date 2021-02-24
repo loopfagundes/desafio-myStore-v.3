@@ -38,7 +38,7 @@ public class ProductAppObject {
     }
 
     public WebElement getChooseProductPrintedChiffonDressButton() {
-        return driver.findElement(By.cssSelector("img[title='Printed Chiffon Dress']"));
+        return driver.findElement(By.cssSelector("div[class='center-block col-xs-4 col-xs-7 col-md-4'] a[title='Printed Chiffon Dress']"));
     }
 
     public WebElement getValidateNameProductTwoText() {

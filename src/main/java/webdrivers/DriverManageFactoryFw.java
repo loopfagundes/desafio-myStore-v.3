@@ -15,6 +15,7 @@ public class DriverManageFactoryFw {
                 WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
                 driver.manage().window().maximize();
+                driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
                 break;
             default:
                 break;

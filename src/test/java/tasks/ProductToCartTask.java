@@ -51,5 +51,6 @@ public class ProductToCartTask {
         Assert.assertEquals("ORDER CONFIRMATION", productToCartAppObject.getValidatePageOrderConfirmationLabel().getText());
         Assert.assertEquals("Your order on My Store is complete.", productToCartAppObject.getValidateMyStoreCompleteLabel().getText());
         productToCartAppObject.getLogoutButton().click();
+        Assert.assertEquals("AUTHENTICATION", productToCartAppObject.getValidateAuthLabel().getText());
     }
 }

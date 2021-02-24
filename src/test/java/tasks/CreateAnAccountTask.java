@@ -27,7 +27,18 @@ public class CreateAnAccountTask {
     }
 
     private void createAnAccount() {
-        createAnAccountAppObject.getFirstNameTextField().sendKeys(faker.name().firstName());
         createAnAccountAppObject.getGenderCheckBox().click();
+        createAnAccountAppObject.getFirstNameTextField().sendKeys(faker.name().firstName());
+        createAnAccountAppObject.getLastNameTextField().sendKeys(faker.name().lastName());
+        createAnAccountAppObject.getPasswordTextField().sendKeys(faker.internet().password());
+        createAnAccountAppObject.getDaysComboBox().selectByValue("17");
+        createAnAccountAppObject.getMonthsComboBox().selectByValue("10");
+        createAnAccountAppObject.getYearsComboBox().selectByValue("1991");
+        createAnAccountAppObject.getAddressTextField().sendKeys(faker.address().fullAddress());
+        createAnAccountAppObject.getCityTextField().sendKeys(faker.address().city());
+        createAnAccountAppObject.getStateComboBox().selectByValue("32");
+        createAnAccountAppObject.getPostalCodeTextField().sendKeys(faker.number().digits(5));
+        createAnAccountAppObject.getNumberPhoneTextField().sendKeys(faker.phoneNumber().cellPhone());
+        createAnAccountAppObject.getRegisterButton().click();
     }
 }
